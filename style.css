@@ -91,3 +91,18 @@ body.wrong {
 .score {
     padding: 20px;
 }
+
+.countdown {
+    background-color: white;
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.title {
+    text-align: center;
+}

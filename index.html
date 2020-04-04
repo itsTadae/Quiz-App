@@ -6,26 +6,30 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        
     </head>
     <body id="bodyElement">
-       
-        <div class="container">
-            <div id="question-container" class="hide">
-                <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
+        
+            <div class="container">
+                <h1 class ="title">League of Legends Quiz</h1>
+                <br>
+                <div id="question-container" class="hide">
+                    <p id="countdown" class="countdown"></p>
+                    <div id="question">Question</div>
+                    <div id="answer-buttons" class="btn-grid">
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="start-btn" class="start-btn btn">Start</button>
+                    <button id="next-btn" class="next-btn btn hide">Next</button>
+
                 </div>
             </div>
-            <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class="next-btn btn hide">Next</button>
-                <label id="score" class="score"></label>
-            </div>
-        </div>
-        
+
         <script src="script.js"></script>
         <script src="api.js"></script>
     </body>
