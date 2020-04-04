@@ -17,8 +17,9 @@ nextBtn.addEventListener('click', () => {
 })
 // Start quiz
 function startGame() {
-    this.questionContainerElement = document.getElementById('question-container');
+    
     resetState()
+    
     renderCounter()
     startBtn.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -100,7 +101,7 @@ function clearStatusClass(element) {
 function showScores() {
     
     var gameOverHTML = "<h1>Result</h1>";
-    gameOverHTML += "<h2 id='score'> Your scores: " + score + "</h2>";
+    gameOverHTML += "<h2 id='scores'> Your score: " + score + "</h2>";
     questionContainerElement.innerHTML = gameOverHTML;
     startBtn.innerText = 'Restart';
     startBtn.classList.remove('hide');
@@ -127,4 +128,6 @@ function renderCounter() {
         showScores();
     }
 }
+
+
 
